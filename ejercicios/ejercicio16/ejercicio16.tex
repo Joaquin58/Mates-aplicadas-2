@@ -1,0 +1,70 @@
+\chapter*{STEWART SECCION 3.7 EJERCICIO 16}
+El volumen de una célula esférica en crecimiento es $V=\frac{4}{3}\pi r^3$, donde el radio $r$ se mide en micrómetros ($1\;\mu m = 10^{-6}m$).
+\begin{enumerate}[label=\alph*)]
+	\item Encuentre la razón de combio promedio de $V$ respecto a $r$, cuando este cambia de
+	      \begin{multicols}{6}
+		      \noindent
+		      \begin{enumerate}[label=\roman*)]
+			      \item 5 a 8 $\mu m$
+			            \columnbreak
+			      \item 5 a 6 $\mu m$
+			            \columnbreak
+			      \item 5 a 5.1 $\mu m$
+		      \end{enumerate}
+	      \end{multicols}
+	\item Halle la razón de cambio instantánea de $V$ respecto a $r$, cuando $r=5\mu m$
+	\item Demuestr que la razónde cambio del volumen de una esfera respecto a su radio es igual a su área superficial.
+	      Explique geométricamente por qué esto es cierto. Arguemnte por analogía con el ejercicio 13c)
+\end{enumerate}
+
+\textbf{Inciso a)} Con base en que la razón de cambio de $y$ respecto de $x$ en el intervalo $[x_1,  x_2]$ puede interpretarse como la pendiente de la recta secante, esot es el cociente de diferencias $$\frac{\Delta y}{\Delta x}=\frac{f(x_2)-f(x_1)}{x_2-x_1}$$
+Para este caso, nuestra función del Volumen que depende del radio $$V(r)=\frac{4}{3}\pi r^3$$. Para saber la razón de cambio promedio es necesario efectuar el razonamiento anterior, dado:$$\frac{\Delta V}{\Delta r}=\frac{V(r_1)-V(r_2)}{r_1-r_2}$$
+para
+\begin{multicols}{6}
+	\noindent
+	\begin{enumerate}[label=\roman*)]
+		\item $r_1=5$ a $r_2=8$ $\mu m$
+		      \columnbreak
+		\item $r_1=5$ a $r_2=6$ $\mu m$
+		      \columnbreak
+		\item $r_1=5$ a $r_2=5.1$ $\mu m$
+	\end{enumerate}
+\end{multicols}
+$\therefore \text{Sustituyendo en la ecuación}$
+\begin{multicols*}{3}
+	\noindent
+	\begin{align*}
+		\implies I)\; \frac{\Delta V}{\Delta r} = & \frac{V(8)-V(5)}{8-5}                               \\
+		\implies\frac{\Delta V}{\Delta r} =       & \frac{\frac{4}{3}\pi(8)^3-\frac{4}{3}\pi(5)^3}{8-5} \\
+        =       & \frac{\frac{4}{3}\pi(8^3-5^3)}{3}\\
+        =       &\frac{\frac{4}{3}\pi(512-125)}{3}\\
+        =       &\frac{\frac{4}{3}\pi(387)}{3}\\
+        =       &\frac{4}{9}\pi(387)\\
+		\simeq                                    & 540.3539 \; \mu m^3/\mu m
+	\end{align*}
+	\columnbreak
+	\begin{align*}
+		\implies II)\; \frac{\Delta V}{\Delta r} = & \frac{V(6)-V(5)}{6-5}                               \\
+		\implies\frac{\Delta V}{\Delta r} =        & \frac{\frac{4}{3}\pi(6)^3-\frac{4}{3}\pi(5)^3}{6-5} \\
+		=                                          & \frac{\frac{4}{3}\pi((6)^3-(5)^3)}{1}               \\
+		=                                          & \frac{4}{3}\pi((6)^3-(5)^3)                         \\
+		=                                          & \frac{4}{3}\pi(91)                                  \\
+		\simeq                                     & 381.1800\; \mu m^3/\mu m                                    \\
+	\end{align*}
+	\columnbreak
+	\begin{align*}
+		\implies III)\; \frac{\Delta V}{\Delta r} = & \frac{V(5.1)-V(5)}{5.1-5}                               \\
+		\implies \frac{\Delta V}{\Delta r} =        & \frac{\frac{4}{3}\pi(5.1)^3-\frac{4}{3}\pi(5)^3}{5.1-5} \\
+		=                                           & \frac{\frac{4}{3}\pi((5.1)^3-(5)^3)}{0.1}               \\
+		=                                           & \frac{4\pi(7.651)}{3\cdot 0.1}                          \\
+		=                                           & \frac{4}{0.3}\cdot \pi(7.651)                           \\
+		\simeq                                      & 320.4843\;\mu m^3/\mu m
+	\end{align*}
+\end{multicols*}
+$\therefore$ Las razones medias de coambio para los valores de I), II) y III) respectivamente son
+$$I)\simeq 810.5310 \; \mu m$$
+$$II)\simeq 381.1800\; \mu m$$
+$$III)\simeq 320.4843\;\mu m$$
+\textbf{Inciso b)} Su límite, cuando $\Delta x \rightarrow 0$ es la derivada $f'(x_1)$, la cual puede interpretarse como la razón de cambio instantánea de y respecto a x, o sea, la pendiente de la recta tangente en $P(x_1, f(x_1))$.
+Dicho esto la derivada de $V(r)$ es la razón de coambio instantánea: $$\therefore \left.\frac{dV}{dr}\right|_{r=5\;\mu m}=\left . 4\pi r^2\right|_{r=5\;\mu m}$$
+$$\implies 4\pi (5)^2\simeq 314.1592 \;\mu m^3/\mu m$$
