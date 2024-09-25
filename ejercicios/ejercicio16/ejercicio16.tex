@@ -13,8 +13,8 @@ El volumen de una célula esférica en crecimiento es $V=\frac{4}{3}\pi r^3$, do
 		      \end{enumerate}
 	      \end{multicols}
 	\item Halle la razón de cambio instantánea de $V$ respecto a $r$, cuando $r=5\mu m$
-	\item Demuestr que la razónde cambio del volumen de una esfera respecto a su radio es igual a su área superficial.
-	      Explique geométricamente por qué esto es cierto. Arguemnte por analogía con el ejercicio 13c)
+	\item Demuestra que la razón de cambio del volumen de una esfera respecto a su radio es igual a su área superficial.
+	      Explique geométricamente por qué esto es cierto.
 \end{enumerate}
 
 \textbf{Inciso a)} Con base en que la razón de cambio de $y$ respecto de $x$ en el intervalo $[x_1,  x_2]$ puede interpretarse como la pendiente de la recta secante, esot es el cociente de diferencias $$\frac{\Delta y}{\Delta x}=\frac{f(x_2)-f(x_1)}{x_2-x_1}$$
@@ -68,3 +68,13 @@ $$III)\simeq 320.4843\;\mu m$$
 \textbf{Inciso b)} Su límite, cuando $\Delta x \rightarrow 0$ es la derivada $f'(x_1)$, la cual puede interpretarse como la razón de cambio instantánea de y respecto a x, o sea, la pendiente de la recta tangente en $P(x_1, f(x_1))$.
 Dicho esto la derivada de $V(r)$ es la razón de coambio instantánea: $$\therefore \left.\frac{dV}{dr}\right|_{r=5\;\mu m}=\left . 4\pi r^2\right|_{r=5\;\mu m}$$
 $$\implies 4\pi (5)^2\simeq 314.1592 \;\mu m^3/\mu m$$
+
+\textbf{Inciso c)} Ciertamente definimos que el volumen de la célula (nuestra esfera) está dado por $$V=\frac{4}{3}\pi r^3$$
+La razón de cambio del volumen respecto a radio es la derivada de V $$\frac{dV}{dr}=4\pi r^2$$
+
+De este modo, si el incremendo del radio es un pequeño intervalo  dr, estonces el cambio del volumen de la esfera $(dV)$ se puede aproximar como la "capa" adicional de volumen que se añade a la superficie de la esfera inicial
+$$\Delta V \approx 4\pi r^2 \cdot \Delta r$$
+Al dividir por $\Delta r$ , obtenemos:$$\frac{\Delta V}{\Delta r} \approx 4\pi r^2$$
+
+Por lo tanto, la razón de cambio del volumen de una esfera respecto a su radio es igual a su área superficial, de manera similar a cómo la razón de cambio del area del circulo es aproximadamente igual a la circunferencia por el incremento del radio.
+
