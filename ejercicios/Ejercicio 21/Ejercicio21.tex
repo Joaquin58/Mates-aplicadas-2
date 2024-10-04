@@ -1,0 +1,82 @@
+\chapter*{STEWART SECCION 3.7 EJERCICIO 21}
+\section*{Demostración}
+
+1. Definición de la fuerza como la derivada del momentum:
+\[
+F = \frac{d}{dt}(mv)
+\]
+
+2. Momentum relativista:
+\[
+p = mv = \frac{m_0 v}{\sqrt{1 - \frac{v^2}{c^2}}}
+\]
+
+3. Masa relativista:
+\[
+m = \frac{m_0}{\sqrt{1 - \frac{v^2}{c^2}}}
+\]
+
+4. Derivada del momentum relativista:
+\[
+F = \frac{d}{dt} \left( \frac{m_0 v}{\sqrt{1 - \frac{v^2}{c^2}}} \right)
+\]
+
+5. Aplicando la regla del producto:
+\[
+F = m_0 \frac{d}{dt} \left( \frac{v}{\sqrt{1 - \frac{v^2}{c^2}}} \right)
+\]
+
+6. Derivada del primer término:
+\[
+F = m_0 \left[ \frac{d}{dt}(v) \cdot \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} + v \cdot \frac{d}{dt}\left( \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} \right) \right]
+\]
+
+7. Primera derivada: 
+\[
+F = m_0 \left[ \frac{a}{\sqrt{1 - \frac{v^2}{c^2}}} + v \cdot \frac{d}{dt}\left( \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} \right) \right]
+\]
+
+8. Derivada del segundo término usando la regla de la cadena:
+\[
+\frac{d}{dt}\left( \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} \right) = \frac{\frac{v}{c^2}}{\left(1 - \frac{v^2}{c^2}\right)^{3/2}} \cdot \frac{dv}{dt}
+\]
+
+9. Sustitución de \( \frac{dv}{dt} = a \):
+\[
+\frac{d}{dt}\left( \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} \right) = \frac{v a}{c^2 \left(1 - \frac{v^2}{c^2}\right)^{3/2}}
+\]
+
+10. Sustitución en la fuerza:
+\[
+F = m_0 \left[ \frac{a}{\sqrt{1 - \frac{v^2}{c^2}}} + v \cdot \frac{v a}{c^2 \left(1 - \frac{v^2}{c^2}\right)^{3/2}} \right]
+\]
+
+11. Factor común de \( a \):
+\[
+F = m_0 a \left[ \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} + \frac{v^2}{c^2 \left(1 - \frac{v^2}{c^2}\right)^{3/2}} \right]
+\]
+
+12. Suma de los términos:
+\[
+F = m_0 a \left[ \frac{1 \cdot \left(1 - \frac{v^2}{c^2}\right) + \frac{v^2}{c^2}}{\left(1 - \frac{v^2}{c^2}\right)^{3/2}} \right]
+\]
+
+13. Simplificando:
+\[
+F = m_0 a \left[ \frac{1 - \frac{v^2}{c^2} + \frac{v^2}{c^2}}{\left(1 - \frac{v^2}{c^2}\right)^{3/2}} \right]
+\]
+
+14. Simplificando:
+\[
+F = m_0 a \left[ \frac{1}{\left(1 - \frac{v^2}{c^2}\right)^{3/2}} \right]
+\]
+
+15. Simplificando:
+\[
+F = \frac{m_0 a}{\left(1 - \frac{v^2}{c^2}\right)^{3/2}}
+\]
+
+16. Expresión final de la fuerza relativista:
+\[
+F = \frac{m_0 a}{\left(1 - \frac{v^2}{c^2}\right)^{3/2}}
+\]
